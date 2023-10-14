@@ -1,0 +1,32 @@
+device: cuda:0
+datasets: fashionmnist #mnist cifar10 fashion-mnist
+datasets_path: ~/dataset
+model: lr  #cnn、resnet18
+
+client_number: 100
+mal_number: 30
+sample_ratio: 1
+global_epoch: 50
+local_epoch: 5
+
+batch_size: 10
+dirichlet_alpha: 0.5
+
+logPath: ./log/model_
+
+
+# inner_product
+# additive_noise、gradient_rise、attack_trimmedmean
+# label_flip
+# how_to_backdoor、
+
+# gradient_rise -3
+# additive_noise 3
+# inner_product ?
+attack: label_flip
+attack_value: 2
+# no_defense、cluster、trimmedmean
+defense: cluster
+
+cluster_number: [4, 5, 6, 7, 8 ]
+threshod: 10

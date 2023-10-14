@@ -1,0 +1,12 @@
+attack: additive_noise
+batch_size: 10
+client_number: 100
+datasets: cifar10
+datasets_path: ~/dataset
+device: cuda:0
+dirichlet_alpha: 0.5
+global_epoch: 10000
+local_epoch: 5
+logPath: ./log/model_
+model: resnet18
+sample_ration: 0.1
