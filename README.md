@@ -3,7 +3,7 @@
 Run this repo by
 
 ```python
-python main.py
+python train.py
 ```
 
 The configeration file in `./config`
